@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  remote_user: root
+
+  vars:
+    adminer_add_apache_config: true
+
+  roles:
+    - openapphack.apache
+    - ansible-role-openapphack-adminer
